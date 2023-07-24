@@ -1,0 +1,127 @@
+/*Importar Fuente*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Header Inicio*/
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding:0 5%;
+}
+.logo{
+    width: 10vh;
+    height: 5vh;
+}
+.navBar{
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.navBar ul li{
+    display: inline;
+    margin: 0 10px;
+}
+.navBar ul li a{
+    text-decoration: none;
+    color: #F67842;
+}
+.navBar ul li a:hover{
+    color: gray;
+}
+/*Header Final*/
+
+/* Main inicio */
+
+.banner{
+    width: 100%;
+    padding: 10%;
+    background-image: url(../img/Banner.jpeg);
+    background-repeat: round no-repeat;
+    overflow: auto;
+    text-align: center;
+    margin-bottom: 10vh;
+}
+.tituloBanner{
+    color: #FFFF;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    border-color: #89DB75;
+    margin-bottom: 5vh;
+}
+.botonRegistro{ 
+    border-radius: 5vh;
+    border: none;
+    height: 45px;
+    width: 133px;
+    background-color: #89DB75;
+    
+}
+.botonRegistro:hover{
+    background-color: #BBB8B8;
+}
+.botonRegistro a{
+    text-decoration: none;
+    color: #FFFF;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    border-color: #89DB75;
+}
+.bici{
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr 3fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "izquierda imagen derecha"; 
+}
+.izquierda{ 
+    grid-area: izquierda; 
+    margin: 5vh auto;
+}
+.imagen{ 
+    grid-area: imagen; 
+    width: 100%;
+}
+.derecha{ 
+    grid-area: derecha; 
+    margin: 0 auto;
+}
+
+aside ul li{
+    list-style: none;
+    margin: 5vh 0;
+    color: green;
+}
+/* Main final */
+
+/* Footer inicio*/
+.footer{
+    margin-top: 10vh;
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #F67842;
+}
+.tituloFooter{
+    display: flex;
+    align-items: center;
+    color: #FFFF;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+.iconosFooter{
+    display: inline;
+}
+.icono{
+    height: 5vh;
+    width: 5vh;
+    margin: 5px;
+    border-radius: 5vh;
+}
+/* Footer final */
