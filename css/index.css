@@ -1,127 +1,188 @@
 /*Importar Fuente*/
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 /*Header Inicio*/
-.header{
-    display: flex;
-    justify-content: space-between;
-    padding:0 5%;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5%;
+  background-color: #f67842;
 }
-.logo{
-    width: 10vh;
-    height: 5vh;
+.logo {
+  width: 10vh;
+  height: 5vh;
+  margin: 3px 0;
 }
-.navBar{
-    display: flex;
-    align-content: center;
-    flex-wrap: wrap;
+.navBar {
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
 }
-.navBar ul li{
-    display: inline;
-    margin: 0 10px;
+.navBar ul li {
+  display: inline;
+  margin: 0 10px;
 }
-.navBar ul li a{
-    text-decoration: none;
-    color: #F67842;
+.navBar ul li a {
+  text-decoration: none;
+  color: #ffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 2vh;
 }
-.navBar ul li a:hover{
-    color: gray;
+.ingreso {
+  color: black;
 }
+.navBar ul li a:hover {
+  color: gray;
+}
+.iconoPerfil {
+  font-size: 4vh;
+}
+
 /*Header Final*/
 
 /* Main inicio */
 
-.banner{
-    width: 100%;
-    padding: 10%;
-    background-image: url(../img/Banner.jpeg);
-    background-repeat: round no-repeat;
-    overflow: auto;
-    text-align: center;
-    margin-bottom: 10vh;
-}
-.tituloBanner{
-    color: #FFFF;
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    border-color: #89DB75;
-    margin-bottom: 5vh;
-}
-.botonRegistro{ 
-    border-radius: 5vh;
-    border: none;
-    height: 45px;
-    width: 133px;
-    background-color: #89DB75;
-    
-}
-.botonRegistro:hover{
-    background-color: #BBB8B8;
-}
-.botonRegistro a{
-    text-decoration: none;
-    color: #FFFF;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    border-color: #89DB75;
-}
-.bici{
-    display: grid; 
-    grid-auto-columns: 1fr; 
-    grid-template-columns: 1fr 3fr 1fr; 
-    grid-template-rows: 1fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-      "izquierda imagen derecha"; 
-}
-.izquierda{ 
-    grid-area: izquierda; 
-    margin: 5vh auto;
-}
-.imagen{ 
-    grid-area: imagen; 
-    width: 100%;
-}
-.derecha{ 
-    grid-area: derecha; 
-    margin: 0 auto;
+.main {
+  background-image: url(../img/FondoSeccion1.png);
+  background-repeat: no-repeat;
 }
 
-aside ul li{
-    list-style: none;
-    margin: 5vh 0;
-    color: green;
+/*Inicio Articulo 1*/
+
+.registrate {
+  text-align: center;
 }
+.tituloMain {
+  margin-top: 10vh;
+  font-weight: bold;
+  font-size: 10vh;
+}
+.tituloEcobici {
+  color: #f67842;
+  font-weight: bold;
+}
+.eslogan {
+  color: #9a9898;
+  margin: 5vh 0;
+  font-size: 2vh;
+}
+.linkRegistro {
+  font-size: 2vh;
+  background-color: #f67842;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+  padding: 2vh 4vh;
+  border-radius: 2.3vh;
+  border: none;
+  text-decoration: none;
+  color: #ffff;
+}
+.linkRegistro:hover {
+  color: #ffff;
+  background-color: #9a9898;
+}
+/* Final Articulo1 */
+
+/* Inicio Articulo2 */
+.promocional {
+  margin: 5vh 0;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 5px 0px;
+}
+.ecoBici,
+.biciAmigos,
+.biciParadas {
+  border: 0.4vh solid #f67842;
+  border-radius: 3vh;
+  width: 10vh;
+  height: 5vh;
+  font-size: 1.5vh;
+  margin: 3vh;
+  display: grid;
+  align-self: center;
+  text-align: center;
+  color: #689c5b;
+}
+.bici {
+  grid-area: 1 / 1 / 2 / 3;
+  height: 45vh;
+  margin-top: 34vh;
+  z-index: 1;
+  margin-left: 5%;
+}
+.datos {
+  grid-area: 1 / 2 / 2 / 3;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  height: 10vh;
+  margin-top: 20vh;
+}
+.remera {
+  grid-area: 1 / 3 / 2 / 4;
+  height: 100vh;
+  margin-top: -21vh;
+  margin-left: -15vh;
+}
+.lineaDivisora {
+  grid-area: 2 / 1 / 3 / 4;
+  background-color: #689c5b;
+  width: 100%;
+  height: 2%;
+  margin-top: -1.5vh;
+}
+.textoPromocional {
+  grid-area: 1 / 3 / 2 / 4;
+  color: #f67842;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 2vh;
+  width: 17vh;
+  margin-left: 44vh;
+  margin-bottom: 13vh;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Final Articulo2 */
+
 /* Main final */
 
 /* Footer inicio*/
-.footer{
-    margin-top: 10vh;
-    padding: 0 5%;
-    display: flex;
-    justify-content: space-between;
-    background-color: #F67842;
+.footer {
+  margin-top: 10vh;
+  padding: 0 5%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f67842;
 }
-.tituloFooter{
-    display: flex;
-    align-items: center;
-    color: #FFFF;
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
+.tituloFooter {
+  display: flex;
+  align-items: center;
+  color: #ffff;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
 }
-.iconosFooter{
-    display: inline;
+.iconosFooter {
+  display: inline;
 }
-.icono{
-    height: 5vh;
-    width: 5vh;
-    margin: 5px;
-    border-radius: 5vh;
+.icono {
+  height: 5vh;
+  width: 5vh;
+  margin: 5px;
+  border-radius: 5vh;
 }
 /* Footer final */
