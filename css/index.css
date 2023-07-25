@@ -56,6 +56,8 @@
   background-repeat: no-repeat;
 }
 
+/*Inicio Sección 1*/
+
 /*Inicio Articulo 1*/
 
 .registrate {
@@ -158,6 +160,26 @@
 }
 
 /* Final Articulo2 */
+
+/*Final Sección 1*/
+
+/*Inicio Sección 2*/
+
+.seccion2{
+    background-image: url(../img/FondoSeccion2.png);
+    background-position: center;
+    height: 80vh;
+    margin-top: -84vh;
+}
+
+.tituloSeccion2{
+    color: #ffff;
+    font-weight: bold;
+    padding: 15vh;
+    font-size: 5vh;
+}
+
+/*Final Sección 2*/
 
 /* Main final */
 
