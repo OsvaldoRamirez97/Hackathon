@@ -1,0 +1,78 @@
+.mainRegistro {
+  background-image: url(../img/FondoSeccion1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.tituloRegistro {
+  text-align: center;
+  color: #689c5b;
+  font-family: "Inter", sans-serif;
+  font-size: 5vh;
+  display: block;
+  margin-top: 5vh;
+}
+
+.content {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.2em;
+}
+
+.contact-form form .block {
+  grid-column: 1/3;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px;
+  width: 30%;
+}
+
+label{
+    display: block;
+    margin: 2vh;
+}
+
+.contact-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 2vh;
+}
+
+.contact-form form p {
+  margin: 0.2em;
+  font-family: "Inter", sans-serif;
+}
+
+.contact-form form button,
+.contact-form form input {
+  border-radius: 50px;
+  padding: 0.7em;
+  width: 90%;
+  border-color: #689c5b;
+  background: none;
+  border: 1px solid #689c5b;
+  outline: none;
+  font-family: "Inter", sans-serif;
+}
+
+.contact-form form input {
+    width: 50%;
+}
+
+.checkbox {
+    margin: 4vh 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.text-checkbox {
+  width: auto;
+}
+
+#checkbox {
+  width: 5%;
+  color: red;
+}
