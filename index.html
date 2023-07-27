@@ -19,7 +19,7 @@
       </div>
       <nav class="navBar">
         <ul>
-            <li><a href="#">BiciMapa</a></li>
+            <li><a href="#biciMapa">BiciMapa</a></li>
           <li><a href="pages/biciSeguridad.html">BiciSeguridad</a></li>
           <li><a href="pages/nosotros.html">Nosotros</a></li>
           <li><a href="#"><span class="ingreso">Ingresar</span></a></li>
@@ -59,7 +59,9 @@
         </article>
       </section>
       <section class="seccion2">
-        <h3 class="tituloSeccion2">No te quedes con dudas</h3>
+        <div class="tituloSeccion2">
+          <h3>No te quedes con dudas</h3>
+        </div>
 
         <div class="contenedorTarjetas">
           <div class="tarjeta">
@@ -87,7 +89,7 @@
           <div class="tarjeta">
             <h3 class="tituloTarjeta">¿Qué es EcoBici?</h3>
             <p class="textoEcobici" >Ecobici es el sistema de transporte público de bicicletas compartidas que desarrolló el Gobierno de la Ciudad de Buenos Aires, brindando a quienes se mueven en la Ciudad una nueva alternativa de transporte.</p>
-            <a href="https://www.youtube.com/watch?v=WVPwDP0-Hoc" class="botonLink">Ver video</a>
+            <a href="https://www.youtube.com/watch?v=WVPwDP0-Hoc" target="_blank"  class="botonLink">Ver video</a>
           </div>
           <div class="tarjeta">
             <h3 class="tituloTarjeta">Objetivo</h3>
@@ -96,13 +98,47 @@
           </div>
         </div>
       </section>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d105060.61364236563!2d-58.48044443136211!3d-34.6257966847495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sestacion%20de%20ecobici!5e0!3m2!1ses-419!2sar!4v1690252286402!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <section class="seccion3" id="biciMapa">
+        <div class="biciMapa">
+          <div class="infoBiciMapa">
+            <h3 class="tituloBiciMapa">BICIMAPA</h3>
+            <div class="lugares">
+              <h3 class="titulo">BA Ecobici</h3>
+              <p>Estación de alquiler de bicicletas </p>
+              <p>350 - Plaza Irlanda</p>
+              <p>6/23 bicis disponibles</p>
+              <div class="divisionLugares"></div>
+            </div>
+            <div class="lugares">
+              <h3 class="titulo">BA Ecobici</h3>
+              <p>Estación de alquiler de bicicletas  </p>
+              <p> 285 - ESPINOSA </p>
+              <p>17/19 bicis disponibles</p>
+              <div class="divisionLugares"></div>
+            </div>
+            <div class="lugares">
+              <h3 class="titulo">BA Ecobici</h3>
+              <p>Estación de alquiler de bicicletas  </p>
+              <p>206 - Galicia</p>
+              <p>0/28 bicis disponibles</p>
+              <div class="divisionLugares"></div>
+            </div>
+
+              <a href="#biciMapa" class="verMas">
+                Ver más lugares
+                <i class="bi bi-chevron-right flecha"></i>
+              </a>
+          </div>
+
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d52528.62982282957!2d-58.44280724275524!3d-34.62844552320751!3m2!1i1024!2i768!4f13.1!2m1!1sestacion%20de%20ecobici!5e0!3m2!1ses-419!2sar!4v1690423459899!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
+      </section>
     </main>
     <footer id="footer" class="footer">
       <div class="lineaFooter"></div>
      <section class="footerSeccion1">
       <div class="infoContacto">
-        <a href="https://buenosaires.gob.ar/inicio/" class="ba footerBoton">
+        <a href="https://buenosaires.gob.ar/inicio/" target="_blank" class="ba footerBoton">
           <img src="https://play-lh.googleusercontent.com/pTYx_X9cjkLFdb_9piwGLAUwq9z_oUjSGzLLeCegj3GJnoiEbqHGT376y2OP3tdk2YM=s48-rw" alt="BA 147" class="iconos tarjetaFoter">
           <h3 class="tituloInfo">Mas información</h3>
         </a>
@@ -125,7 +161,7 @@
             <i class="bi bi-facebook iconos facebook"></i>
           </a>
           <a href="https://twitter.com/BAecobici" class="nosub">
-            <i class="bi bi-twitter twitter"></i>
+            <i class="bi bi-twitter iconos twitter"></i>
           </a>
         </div>
       </div>

@@ -54,6 +54,7 @@
 .main {
   background-image: url(../img/FondoSeccion1.png);
   background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 /*Inicio Sección 1*/
@@ -170,15 +171,20 @@
 .seccion2 {
   background-image: url(../img/FondoSeccion2.png);
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-top: -2vh;
 }
-
 .tituloSeccion2 {
   color: #689c5b;
   font-weight: bold;
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  padding: 10vh;
   font-size: 5vh;
+}
+.tituloSeccion2 h3{
+ padding-top: 15vh;
+ margin-left: 10%;
 }
 .contenedorTarjetas {
   display: flex;
@@ -240,6 +246,52 @@
 }
 /*Final Sección 2*/
 
+/*Inicio Sección 3*/
+.seccion3{
+  margin: 5%;
+  display: flex;
+  justify-content: space-between;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.tituloBiciMapa{
+  font-size: 5vh;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  color: #689C5B;
+  margin-bottom: 4vh;
+}
+.mapa{
+  width: 70%;
+  height: 60vh;
+}
+.lugares{
+  margin-bottom: 3vh;
+}
+.divisionLugares{
+  background-color: #9A9898;
+  height: .1vh;
+  margin-top: 1vh;
+}
+.verMas{
+  background-color: #689C5B;
+  color: #ffff;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 2vh;
+  border: none;
+  padding: 1.5vh;
+  border-radius: 4vh;
+  align-items: center;
+  text-decoration: none;
+}
+.flecha{
+  font-size: 2vh;
+  margin-left: 2vh;
+}
+/*Final Sección 3*/
+
 /* Main final */
 
 /* Footer inicio*/
@@ -260,8 +312,8 @@
   background-color: white;
 }
 .iconos {
-  font-size: 2vh;
-  height: 2vh;
+  font-size: 3vh;
+  height: 3vh;
   margin-right: 1vh;
 }
 .footerBoton {
