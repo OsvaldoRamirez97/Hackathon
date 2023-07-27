@@ -8,7 +8,8 @@
   box-sizing: border-box;
 }
 
-/*Header Inicio*/
+@media (min-width :1200px){
+  /*Header Inicio*/
 
 .header {
   display: flex;
@@ -375,3 +376,386 @@
 }
 
 /* Footer final */
+}
+
+/*Inicio Responsive*/
+
+/*Tablet Inicio*/
+@media (max-width: 1199px) { 
+  /*Header Inicio*/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5%;
+  background-color: #f67842;
+}
+.logo {
+  width: 5vh;
+  height: 2.5vh;
+  margin: 3px 0;
+}
+.navBar {
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.navBar ul li {
+  display: inline;
+  margin: 0 5px;
+}
+.navBar ul li a {
+  text-decoration: none;
+  color: #ffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 1vh;
+}
+.ingreso {
+  color: black;
+}
+.navBar ul li a:hover {
+  color: gray;
+}
+.iconoPerfil {
+  font-size: 2vh;
+}
+
+/*Header Final*/
+
+/* Main inicio */
+
+.main {
+  background-image: url(../img/FondoSeccion1.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+/*Inicio Sección 1*/
+
+/*Inicio Articulo 1*/
+
+.registrate {
+  text-align: center;
+}
+.tituloMain {
+  margin-top: 2.5vh;
+  font-weight: bold;
+  font-size: 2.5vh;
+}
+.tituloEcobici {
+  color: #f67842;
+  font-weight: bold;
+}
+.eslogan {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  color: #9a9898;
+  margin: 2.5vh 0;
+  font-size: 1vh;
+}
+.botonLink {
+  font-size: 1vh;
+  font-family: "Inter", sans-serif;
+  background-color: #f67842;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+  padding: .5vh 1vh;
+  border-radius: 1.15vh;
+  border: none;
+  text-decoration: none;
+  color: #ffff;
+}
+.botonLink:hover {
+  color: #ffff;
+  background-color: #9a9898;
+}
+/* Final Articulo1 */
+
+/* Inicio Articulo2 */
+.promocional {
+  margin-top: -12.5vh;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 5px 0px;
+}
+.ecoBici,
+.biciAmigos,
+.biciParadas {
+  font-size: .75vh;
+  display: grid;
+  align-self: center;
+  text-align: center;
+  color: #689c5b;
+}
+.bici {
+  grid-area: 1 / 1 / 2 / 3;
+  height: 22.5vh;
+  z-index: 1;
+  margin-left: 10%;
+  align-self: flex-end;
+  margin-bottom: -3vh;
+}
+.datos {
+  grid-area: 1 / 2 / 2 / 3;
+  text-align: center;
+  height: 5vh;
+  align-self: center;
+}
+
+.tituloDatos {
+  color: #689c5b;
+  font-family: "Inter", sans-serif;
+}
+.estadisticas {
+  display: flex;
+  border: 0.3vh solid #689c5b;
+  border-radius: 1vh;
+  justify-content: center;
+  align-self: center;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 1.5vh;
+}
+.estadisticasInfo {
+  margin: 0.1vh 1vh;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+.remera {
+  grid-area: 1 / 3 / 2 / 4;
+  margin-left: -10%;
+  margin-bottom: -2vh;
+  height: 40vh;
+}
+.lineaDivisora {
+  grid-area: 2 / 1 / 3 / 4;
+  background-color: #689c5b;
+  width: 100%;
+  height: 1vh;
+}
+
+/* Final Articulo2 */
+
+/*Final Sección 1*/
+
+/*Inicio Sección 2*/
+
+.seccion2 {
+  background-image: url(../img/FondoSeccion2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-top: -1vh;
+}
+.tituloSeccion2 {
+  color: #689c5b;
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 2.5vh;
+}
+.tituloSeccion2 h3{
+ padding-top: 7.5vh;
+ margin-left: 10%;
+}
+.contenedorTarjetas {
+  display: flex;
+  margin: 0 5%;
+}
+.tarjeta {
+  background-color: #689c5b;
+  margin: 5% 5% 15% 5%;
+  width: 33%;
+  border-radius: 1vh;
+  padding: 1.5vh;
+}
+.tituloTarjeta {
+  text-align: center;
+  color: #ffff;
+  text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+}
+.tarjeta .listaDeBeneficios {
+  list-style: none;
+  color: #ffff;
+  font-size: .75vh;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+.tarjeta .listaDeBeneficios div li {
+  margin: .5vh 0;
+}
+.tarjeta .listaDeBeneficios div {
+  display: flex;
+}
+.tarjeta .listaDeBeneficios i {
+  font-size: 1.5vh;
+  margin-right: 0.25vh;
+}
+.tarjeta .listaDeBeneficios .sangria {
+  margin-left: 1vh;
+}
+
+.textoEcobici {
+  color: #ffff;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1vh;
+  text-align: center;
+  margin: 1vh;
+}
+.tarjeta .botonLink {
+  margin: auto;
+  display: table;
+}
+.lampara {
+  color: #ffff;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  font-size: 1.5vh;
+}
+/*Final Sección 2*/
+
+/*Inicio Sección 3*/
+.seccion3{
+  margin: 5%;
+  display: flex;
+  justify-content: space-between;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.tituloBiciMapa{
+  font-size: 2.5vh;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  color: #689C5B;
+  margin-bottom: 1vh;
+}
+.infoBiciMapa .titulo{
+  font-size: 1.5vh;
+}
+.infoBiciMapa p{
+  font-size: 1vh;
+}
+.mapa{
+  width: 70%;
+  height: 30vh;
+}
+.lugares{
+  margin-bottom: 1.5vh;
+}
+.divisionLugares{
+  background-color: #9A9898;
+  height: .05vh;
+  margin-top: .5vh;
+}
+.verMas{
+  background-color: #689C5B;
+  color: #ffff;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.5vh;
+  border: none;
+  padding: 1vh;
+  border-radius: 2vh;
+  align-items: center;
+  text-decoration: none;
+}
+.flecha{
+  font-size: 1vh;
+  margin-left: 1vh;
+}
+/*Final Sección 3*/
+
+/* Main final */
+
+/* Footer inicio*/
+
+.lineaFooter {
+  width: 100%;
+  height: 0.15vh;
+  background-color: #d3d3d3;
+}
+.footer .footerSeccion1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 1vh;
+}
+.footer .footerSeccion1 .infoContacto {
+  margin-left: 10%;
+  display: flex;
+  background-color: white;
+}
+.iconos {
+  font-size: 1.5vh;
+  height: 1.5vh;
+  margin-right: .5vh;
+}
+.footerBoton {
+  display: flex;
+  margin: .5vh;
+  padding: .25vh 1vh;
+  align-items: center;
+  border: .05vh solid #bbb8b8;
+  border-radius: 2.5vh;
+  text-decoration: none;
+  color: #000000;
+}
+.wpp {
+  color: #689c5b;
+}
+
+.footerBoton .tituloInfo {
+  font-size: 1vh;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  color: #000000;
+}
+.decripcionInfo {
+  font-size: .75vh;
+  font-family: "Inter", sans-serif;
+  color: #000000;
+}
+.tituloFooter {
+  color: #bbb8b8;
+  font-size: 1vh;
+}
+.redes {
+  margin-right: 10%;
+}
+.iconosRedes {
+  margin-top: .5vh;
+}
+.nosub {
+  text-decoration: none;
+}
+.facebook {
+  color: #3b5998;
+}
+.twitter {
+  color: #00acee;
+}
+.footer .footerSeccion2 {
+  display: flex;
+  background-color: #f9f9f9;
+  justify-content: space-between;
+  padding: .5vh 2.5%;
+}
+.terminosYCondiciones {
+  display: flex;
+  align-items: center;
+}
+.terminosYCondiciones .tituloFooter {
+  margin: 0 .5vh;
+}
+
+/* Footer final */
+}
+/*Tablet Final */
+
+/*Fin Responsive*/
