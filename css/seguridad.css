@@ -1,0 +1,25 @@
+.mainBiciSeguridad {
+  background-image: url(../img/FondoSeccion1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.seguridad {
+  padding: 3vh 5%;
+  display: flex;
+}
+
+.seguridad img {
+  width: 80%;
+  height: 60;
+  margin: 0 10%;
+}
+
+.tituloSeguridad {
+  text-align: center;
+  color: #689c5b;
+  font-family: "Inter", sans-serif;
+  font-size: 5vh;
+  display: block;
+  margin-top: 5vh;
+}
