@@ -1,118 +1,213 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
-
 
 .mainNosotros {
-
-    background-image: url(../img/FondoSeccion1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-
+  background-image: url(../img/FondoSeccion1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.tituloNosotros{
-    text-align: center;
-    color: #689c5b;
-    font-family: "Inter", sans-serif;
-    font-size: 5vh;
-    display: block;
-    margin-top: 5vh;
+.tituloNosotros {
+  text-align: center;
+  color: #689c5b;
+  font-family: "Inter", sans-serif;
+  font-size: 5vh;
+  display: block;
+  margin-top: 5vh;
 }
 .cartas {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 5% 30%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 5% 30%;
 }
 .card {
-    position: relative;
-    width: 200px;
-    height: 250px;
-    margin-bottom: 5%;
+  position: relative;
+  width: 200px;
+  height: 250px;
+  margin-bottom: 5%;
 }
 
 .card .face {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: .5s;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.5s;
 }
 
 .card .front {
-    transform: perspective(600px) rotateY(0deg);
-    box-shadow: 0 10px 50px #000000;
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 10px 50px #000000;
 }
 
 .card .front img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .card .front h3 {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 5vh;
-    line-height: 2vh;
-    background: rgba(54, 54, 31, 0.80);
-    color: #689c5b;
-    text-align: center;
-    align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 5vh;
+  line-height: 2vh;
+  background: rgba(54, 54, 31, 0.8);
+  color: #689c5b;
+  text-align: center;
+  align-items: center;
 }
 
 .card .back {
-    transform: perspective(600px) rotateY(180deg);
-    background: #689C5B;
-    padding: 15px;
-    color: rgb(248, 248, 248);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-    box-shadow: 0 5px 10px black;
+  transform: perspective(600px) rotateY(180deg);
+  background: #689c5b;
+  padding: 15px;
+  color: rgb(248, 248, 248);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 5px 10px black;
 }
 
 .card .back .link {
-    border-top: solid 1px #f67842;
-    height: 50px;
-    line-height: 50px;
+  border-top: solid 1px #f67842;
+  height: 50px;
+  line-height: 50px;
+  margin-top: 10px;
 }
 
 .card .back .link a {
-    color: #ffff;
-    font-size: 2vh;
-    text-decoration: none;
-    font-family: "Inter", sans-serif;
+  color: #ffff;
+  font-size: 2vh;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
 }
 
-.card .back .link a:hover{
-    color: #9A9898;
+.card .back .link a:hover {
+  color: #9a9898;
 }
 
 .card .back h3 {
-    font-size: 2vh;
-    margin-top: 20px;
-    letter-spacing: 2px;
+  font-size: 2vh;
+  margin-top: 20px;
+  letter-spacing: 2px;
 }
 
 .card .back p {
-    letter-spacing: 1px;
-    font-size: 1.5vh;
+  letter-spacing: 1px;
+  font-size: 1vh;
 }
 
 .card:hover .front {
-    transform: perspective(600px) rotateY(180deg);
+  transform: perspective(600px) rotateY(180deg);
 }
 
 .card:hover .back {
-    transform: perspective(600px) rotateY(360deg);
+  transform: perspective(600px) rotateY(360deg);
+}
+.twitter{
+    font-size: 3vh;
+  }
+
+@media (max-width: 1199px) {
+  .tituloNosotros {
+    font-size: 2.5vh;
+    margin-top: 1vh;
+  }
+  .cartas {
+    display: flex;
+    margin: 2vh 20vh;
+    justify-items: stretch;
+    flex-direction: row;
+  }
+  .card {
+    position: relative;
+    width: 150px;
+    height: 200px;
+  }
+  .card .front h3 {
+    height: 3vh;
+    line-height: 2vh;
+    font-size: 1.5vh;
+  }
+
+  .card .back {
+    padding: 7px;
+  }
+  .card .back .link {
+    height: 25px;
+    line-height: 25px;
+  }
+  .card .back .link a {
+    font-size: 1vh;
+  }
+  .card .back h3 {
+    font-size: 1.5vh;
+    margin: 10px 0;
+    letter-spacing: 1px;
+  }
+  .card .back p {
+    letter-spacing: 1px;
+    font-size: 0.75vh;
+  }
+  .twitter{
+    font-size: 2vh;
+  }
+}
+@media (max-width: 767px) {
+    .tituloNosotros {
+        font-size: 1.25vh;
+        margin-top: 3vh;
+      }
+  .cartas {
+    display: flex;
+    margin: 2vh 10vh;
+    justify-items: stretch;
+    flex-direction: row;
+  }
+  
+  .card {
+    position: relative;
+    width: 80px;
+    height: 100px;
+  }
+  .card .front h3 {
+    height: 1.5vh;
+    line-height: 1.5vh;
+    font-size: 1vh;
+  }
+
+  .card .back {
+    padding: 3px;
+  }
+  .card .back .link {
+    height: 12px;
+    line-height: 12px;
+  }
+  .card .back .link a {
+    font-size: 0.5vh;
+  }
+  .card .back h3 {
+    font-size: 0.75vh;
+    margin: 5px 0;
+    letter-spacing: 1px;
+  }
+  .card .back p {
+    font-size: 0.4vh;
+  }
+  .card .back .link {
+    margin-top: 2px;
+  }
+  .twitter{
+    font-size: 1vh;
+  }
 }

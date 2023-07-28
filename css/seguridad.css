@@ -23,3 +23,17 @@
   display: block;
   margin-top: 5vh;
 }
+.twitter {
+  font-size: 3vh;
+}
+
+@media (max-width: 1199px) {
+  .twitter {
+    font-size: 2vh;
+  }
+}
+@media (max-width: 767px) {
+  .twitter {
+    font-size: 1vh;
+  }
+}
